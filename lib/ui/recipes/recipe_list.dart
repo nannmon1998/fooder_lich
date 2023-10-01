@@ -95,6 +95,7 @@ class _RecipeListState extends State<RecipeList> {
         child: Column(
           children: <Widget>[
             _buildSearchCard(),
+            _buildHomeImage(),
             _buildRecipeLoader(context),
           ],
         ),
@@ -130,7 +131,7 @@ class _RecipeListState extends State<RecipeList> {
                   Expanded(
                       child: TextField(
                     decoration: const InputDecoration(
-                        border: InputBorder.none, hintText: 'Search'),
+                        border: InputBorder.none, hintText: 'Search desired recipes'),
                     autofocus: false,
                     textInputAction: TextInputAction.done,
                     onSubmitted: (value) {
@@ -170,6 +171,12 @@ class _RecipeListState extends State<RecipeList> {
           ],
         ),
       ),
+    );
+  }
+
+  Widget _buildHomeImage(){
+    return  Container(
+      child :Image.asset("assets/images/food.png"),
     );
   }
 
