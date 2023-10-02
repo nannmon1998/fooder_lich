@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../data/model/recipe.dart';
-import '../../network/recipe_service.dart';
 import '../../network/response_model.dart';
 import '../../network/service_interface.dart';
 import '../colors.dart';
@@ -95,7 +94,6 @@ class _RecipeListState extends State<RecipeList> {
         child: Column(
           children: <Widget>[
             _buildSearchCard(),
-            _buildHomeImage(),
             _buildRecipeLoader(context),
           ],
         ),
@@ -174,12 +172,6 @@ class _RecipeListState extends State<RecipeList> {
     );
   }
 
-  Widget _buildHomeImage(){
-    return  Container(
-      child :Image.asset("assets/images/food.png"),
-    );
-  }
-
   Widget _buildRecipeList(BuildContext recipeListContext,
       List<APIHits> hits){
     final size = MediaQuery.of(context).size;
@@ -218,7 +210,9 @@ class _RecipeListState extends State<RecipeList> {
 
   Widget _buildRecipeLoader(BuildContext context) {
     if (searchTextController.text.length < 3) {
-      return Container();
+      return Expanded(
+        child :Image.asset("assets/images/food.png"),
+      );
     }
     // Show a loading indicator while waiting for the recipes
    return FutureBuilder<Response<Result<APIRecipeQuery>>>(
