@@ -1,12 +1,12 @@
-#Fooder Lich App
+# Fooder Lich App
 This repository contains a Flutter implementation of a Food Recipe app with a captivating introduction section and impressive animations. It also features a signup and signin page with animations, elegantly presented on a bottom sheet.
 
-#Features
+# Features
 Attractive introduction section with smooth animations.
 Signup and signin page with eye-catching animations on a bottom sheet.
 Beautiful UI design to enhance the user experience.
 
-#Getting Started
+# Getting Started
 To get started with the Fooder Lich app, follow these steps:
 
 Prerequisites: Make sure you have Flutter installed on your system. If you don't have it yet, you can install it from the official Flutter website.
