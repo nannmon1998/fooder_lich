@@ -17,3 +17,5 @@ Install Dependencies: Navigate to the project directory and install the required
 
 Run the App: Now, you can run the app on your connected device or emulator:
 
+# Screenshot<img width="1117" alt="fooderlich" src="https://github.com/user-attachments/assets/03073be6-7154-4b7f-8d23-eed7fea2e4a2">
+
