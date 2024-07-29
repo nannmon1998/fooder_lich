@@ -9,7 +9,7 @@ To get started with the Fooder Lich app, follow these steps:
 
 - Prerequisites: Make sure you have Flutter installed on your system. If you don't have it yet, you can install it from the official Flutter website.
 
-- Clone the repository: Clone this repository to your local machine using the following command:
+- Clone the repository: Clone this repository to your local machine using the following command:git clone https://github.com/nannmon1998/fooder_lich.git
 
 - Install Dependencies: Navigate to the project directory and install the required dependencies:
 
