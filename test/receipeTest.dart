@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:fooderlich/data/model/ingredient.dart';
+import 'package:fooderlich/model/ingredient.dart';
 
 void main(){
   test("Test Receipe", (){
